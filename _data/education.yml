@@ -1,0 +1,31 @@
+education:
+
+  - affiliation: "University of Rochester (UR)"
+    website: https://www.rochester.edu/
+    base: Rochester, NY, US
+    # affiliation_short: UR
+    time: Aug. 2023 - Present
+    position: Ph.D. Student in Computer Science
+    advisors:
+      - name: Chenliang Xu
+        page: https://www.cs.rochester.edu/~cxu22/index.html
+    image: ./assets/education_images/uofr-logo-shield.png
+
+  - affiliation: "Johns Hopkins University (JHU)"
+    website: https://www.jhu.edu/
+    base: Baltimore, MD, US
+    # affiliation_short: JHU
+    time: Jan. 2021 - Dec. 2022
+    position: M.S.E. in Financial Mathematics
+    advisors:
+      - name: Maxim Bichuch
+        page: https://mbichuch.github.io/
+    image: ./assets/education_images/JHU_logo.jpg
+
+  - affiliation: "University of Science and Technology of China (USTC)"
+    website: https://en.ustc.edu.cn/
+    base: Hefei, China
+    # affiliation_short: USTC
+    time: Aug. 2015 - Jun. 2019
+    position: B.Sc. in Physics
+    image: ./assets/education_images/USTC_logo.png

@@ -1,0 +1,23 @@
+experiences:
+
+  - affiliation: "Learning Intelligence Signal Processing (LISP) lab"
+    # affiliation_short: LISP lab
+    website: https://lisplab.host.dartmouth.edu/
+    base: Hanover, NH, US
+    time: Jul. 2022 - Aug. 2023
+    position: Graduate Researcher
+    advisors:
+      - name: Peter Chin
+        page: https://engineering.dartmouth.edu/community/faculty/peter-chin/
+    # notes: Excellent Graduate for Exceptional Performance
+    image: ./assets/experience_images/LISP_logo.jpg
+
+  - affiliation: "Bilibili"
+    # affiliation_short: Bilibili
+    base: Shanghai, China
+    website: https://www.linkedin.com/company/bilibili/
+    time: May. 2020 - Dec. 2020
+    position: Data Algorithm Engineer, Intern
+    # notes: Excellent Graduate for Exceptional Performance
+    image: ./assets/experience_images/Bilibili_logo.jpg
+
