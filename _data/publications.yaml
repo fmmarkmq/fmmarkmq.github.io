@@ -2,8 +2,8 @@ papers:
 
   - title: "Do More Details Always Introduce More Hallucinations in LVLM-based Image Captioning?"
     authors: <strong><b>Mingqian Feng</b></strong>, Yunlong Tang, Zeliang Zhang, Chenliang Xu
-    # venue: Preprint arXiv 2024.
-    # paper_pdf: 
+    venue: Preprint arXiv 2024.
+    paper_pdf: "https://arxiv.org/pdf/2406.12663"
     # code:
     image: ./assets/publication_images/Hallu_Teaser.png
     category: [Trustworthy]
