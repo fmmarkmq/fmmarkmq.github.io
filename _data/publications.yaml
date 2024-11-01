@@ -6,6 +6,46 @@ papers:
     paper_pdf: "https://arxiv.org/pdf/2406.12663"
     # code:
     image: ./assets/publication_images/Hallu_Teaser.png
+    category: [Trustworthy, MLLM]
+    # notes:  Coming Soon
+    # highlight: True
+
+  - title: "Will the Inclusion of Generated Data Amplify Bias Across Generations in Future Image Classification Models?"
+    authors: Zeliang Zhang, Xin Liang, <strong><b>Mingqian Feng</b></strong>, Susan Liang, Chenliang Xu
+    venue: Preprint arXiv 2024.
+    paper_pdf: "https://arxiv.org/pdf/2410.10160"
+    # code:
+    image: ./assets/publication_images/gene_bias_teaser.png
+    category: [Trustworthy]
+    # notes:  Coming Soon
+    # highlight: True
+
+  - title: "Empowering LLMs with Pseudo-Untrimmed Videos for Audio-Visual Temporal Understanding"
+    authors: Yunlong Tang, Daiki Shimada, Jing Bi, <strong><b>Mingqian Feng</b></strong>, Hang Hua, Chenliang Xu
+    venue: Preprint arXiv 2024.
+    paper_pdf: "https://arxiv.org/pdf/2403.16276"
+    # code:
+    image: ./assets/publication_images/avicuna_teaser.png
+    category: [MLLM]
+    # notes:  Coming Soon
+    # highlight: True
+
+  - title: "Video Understanding with Large Language Models: A Survey"
+    authors: Yunlong Tang, Jing Bi, Siting Xu, …, <strong><b>Mingqian Feng</b></strong>, …, Jiebo Luo, Chenliang Xu
+    venue: Preprint arXiv 2024.
+    paper_pdf: "https://arxiv.org/pdf/2312.17432"
+    # code:
+    image: ./assets/publication_images/vllm_timeline.png
+    category: [MLLM]
+    # notes:  Coming Soon
+    # highlight: True
+
+  - title: "Can CLIP Count Stars? An Empirical Study on Quantity Bias in CLIP"
+    authors: Zeliang Zhang, Zhuo Liu, <strong><b>Mingqian Feng</b></strong>, Chenliang Xu
+    venue: Preprint arXiv 2024.
+    paper_pdf: "https://arxiv.org/pdf/2409.15035"
+    # code:
+    image: ./assets/publication_images/clip_bias_teaser.png
     category: [Trustworthy]
     # notes:  Coming Soon
     # highlight: True
@@ -16,7 +56,7 @@ papers:
     # paper_pdf: 
     # code:
     image: ./assets/publication_images/DP-LR.png
-    category: [Trustworthy]
+    category: [Trustworthy, ForwardLearning]
     # notes:  Coming Soon
     # highlight: True
 
@@ -25,7 +65,7 @@ papers:
     venue: Preprint arXiv 2024.
     paper_pdf: "https://arxiv.org/pdf/2403.15603.pdf"
     image: ./assets/publication_images/LR_saliency_map.png
-    category: [Trustworthy]
+    category: [Trustworthy, ForwardLearning]
 
   - title: "Discover and Mitigate Multiple Biased Subgroups in Image Classifiers"
     authors: <strong><b>Mingqian Feng*</b></strong>, Zeliang Zhang*, Jinyang Jiang, Rongyi Zhu, Yijie Peng, Chenliang Xu
