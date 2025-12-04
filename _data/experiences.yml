@@ -1,4 +1,17 @@
 experiences:
+  - affiliation: "Microsoft Research"
+    # affiliation_short: Bilibili
+    base: Redmond, WA, US
+    website: https://www.microsoft.com/en-us/research/group/deep-learning-group/
+    time: May. 2025 - Aug. 2025
+    position: Research Intern
+    advisors:
+      - name: Xiaodong Liu
+        page: https://www.microsoft.com/en-us/research/people/xiaodl/
+      - name: Weiwei Yang
+        page: https://www.microsoft.com/en-us/research/people/weiwya/
+    # notes: Excellent Graduate for Exceptional Performance
+    image: ./assets/experience_images/Microsoft_logo.png
 
   - affiliation: "Dartmouth College, LSIP lab"
     # affiliation_short: Dartmouth
