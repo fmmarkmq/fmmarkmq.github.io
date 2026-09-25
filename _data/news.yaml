@@ -1,24 +1,36 @@
 news:
-  - title: "I will join <a href='https://www.microsoft.com/en-us/research/group/deep-learning-group/'>Deep Learning Group</a> at <a href='https://www.microsoft.com/en-us/research/about-microsoft-research/!'>Microsoft Research</a> for summer intern, supervised by <a href='https://scholar.google.com/citations?user=NIewcxMAAAAJ&hl=en'>Xiaodong Liu</a> and <a href='https://scholar.google.com/citations?user=jGavIdgAAAAJ&hl=en'>Weiwei Yang</a>!"
-    date: "02/2024"
+  - title: "Our paper <a href='https://arxiv.org/abs/2601.22636'>Statistical Estimation of Adversarial Risk in Large Language Models under Best-of-N Sampling</a> has been accepted to NeurIPS 2026!"
+    date: "09/2026"
 
-  - title: "One paper accepted by Conference on International Conference on Learning Representations (ICLR) 2025!"
-    date: "01/2024"
+  - title: "Our paper <a href='https://arxiv.org/abs/2605.01687'>MultiBreak: A Scalable and Diverse Multi-turn Jailbreak Benchmark for Evaluating LLM Safety</a> has been accepted to ICML 2026!"
+    date: "05/2026"
 
-  - title: "One paper accepted by Conference on the Association for the Advancement of Artificial Intelligence (AAAI) 2025!"
+  - title: "I will return to the <a href='https://www.microsoft.com/en-us/research/group/deep-learning-group/'>Deep Learning Group</a> at <a href='https://www.microsoft.com/en-us/research/'>Microsoft Research</a> as a summer research intern in 2026, supervised by <a href='https://www.microsoft.com/en-us/research/people/xiaodl/'>Xiaodong Liu</a> and <a href='https://www.microsoft.com/en-us/research/people/weiwya/'>Weiwei Yang</a>!"
+    date: "02/2026"
+
+  - title: "Our paper <a href='https://arxiv.org/abs/2602.06854'>SEMA: Simple yet Effective Learning for Multi-Turn Jailbreak Attacks</a> has been accepted to ICLR 2026!"
+    date: "01/2026"
+
+  - title: "I will join the <a href='https://www.microsoft.com/en-us/research/group/deep-learning-group/'>Deep Learning Group</a> at <a href='https://www.microsoft.com/en-us/research/'>Microsoft Research</a> as a summer research intern in 2025, supervised by <a href='https://www.microsoft.com/en-us/research/people/xiaodl/'>Xiaodong Liu</a> and <a href='https://www.microsoft.com/en-us/research/people/weiwya/'>Weiwei Yang</a>!"
+    date: "02/2025"
+
+  - title: "Our paper <a href='https://iclr.cc/virtual/2025/poster/27694'>FLOPS: Forward Learning with OPtimal Sampling</a> has been accepted to ICLR 2025!"
+    date: "01/2025"
+
+  - title: "Our paper <a href='https://arxiv.org/abs/2403.16276'>Empowering LLMs with Pseudo-Untrimmed Videos for Audio-Visual Temporal Understanding</a> has been accepted to AAAI 2025!"
     date: "12/2024"
 
-  - title: "One paper accepted by Conference on Empirical Methods in Natural Language Processing (EMNLP) 2024!"
+  - title: "Our paper <a href='https://arxiv.org/abs/2409.15035'>Can CLIP Count Stars? An Empirical Study on Quantity Bias in CLIP</a> has been accepted to Findings of EMNLP 2024!"
     date: "09/2024"
 
-  - title: "One paper accepted by Conference on Computer Vision and Pattern Recognition (CVPR) 2024!"
-    date: "01/2024"
+  - title: "Our paper <a href='https://arxiv.org/abs/2403.12777'>Discover and Mitigate Multiple Biased Subgroups in Image Classifiers</a> has been accepted to CVPR 2024!"
+    date: "02/2024"
 
-  - title: "I will join <a href='https://www.cs.rochester.edu/~cxu22/g/index.html'>Chenliang Xu's Group</a> at UR as a Ph.D. student!"
+  - title: "I will join <a href='https://www.cs.rochester.edu/~cxu22/g/index.html'>Chenliang Xu's Group</a> at the University of Rochester as a Ph.D. student!"
     date: "04/2023"
   
-  - title: "Graduated from Johns Hopkins University with a M.S.E. degree."
+  - title: "I graduated from Johns Hopkins University with an M.S.E. in Financial Mathematics!"
     date: "12/2022"
 
-  - title: "Our team achieved 2<sup>nd</sup> place in Algorithms for Threat Detection Challenge (ATD) 2022 at NSF!"
+  - title: "Our team placed 2<sup>nd</sup> in the NSF Algorithms for Threat Detection (ATD) Challenge 2022!"
     date: "09/2022"

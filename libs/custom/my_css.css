@@ -191,3 +191,15 @@ h4 {
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
+/* Show Figure 1(a), including its legend, without the lower bar chart. */
+.figure.multibreak-overview {
+  position: relative;
+  aspect-ratio: 654 / 542;
+  overflow: hidden;
+}
+.figure.multibreak-overview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

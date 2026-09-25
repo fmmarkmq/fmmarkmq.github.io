@@ -6,7 +6,7 @@ title: Home
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
   <p>
-  I am a third-year Ph.D. candidate in the Department of Computer Science at <a href="https://www.rochester.edu/" target="_blank">University of Rochester</a> (UR), 
+  I am a Ph.D. candidate in the Department of Computer Science at <a href="https://www.rochester.edu/" target="_blank">University of Rochester</a> (UR),
   where I am fortunate to be advised by Prof. <a href="https://www.cs.rochester.edu/~cxu22/index.html" target="_blank">Chenliang Xu</a>. 
   Prior to that, I received my M.S.E degree in Financial Mathematics at <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a> (JHU). 
   and my B.Sc. degree in physics at <a href="https://en.ustc.edu.cn/" target="_blank">University of Science and Technology of China</a> (USTC). 
@@ -14,14 +14,10 @@ title: Home
   </p>
 
   <p>
-    I am broadly interested in: </br>
-    - <b>Trustworthy AI:</b> hallucination, bias, privacy, and explainability; </br>
-    - <b>Forward Learning</b>: likelihood ratio method, zeroth-order optimization; </br>
-    - <b>MLLM</b>: Audio-visual LLM, Video LLM; </br>
+    My research focuses on <b>AI Security</b>, with an emphasis on training powerful red-teaming agents for rigorous stress testing and developing comprehensive evaluation frameworks for realistic risk assessment.
   </p>
 
   <p>
-    <!-- Currently, my research focuses on <b>Trustworthy AI</b>, especially robustness, privacy, and explainability.  I also have a keen interest in "physical" properties in latent spaces.  -->
     <span style="color:deeppink;">I am actively looking for collaboration on research. If you share similar interests, please feel free to contact me!</span> 
   </p>
 
@@ -65,61 +61,25 @@ title: Home
   </p>
 
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-trustworthy">Trustworthy</div></li>
-    <li><div class="button" data-ref="#papers-mllm">MLLM</div></li>
-    <li><div class="button" data-ref="#papers-forwardlearning">Forward Learning</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
+    <li><div class="button active" data-ref="#papers-security">Security</div></li>
+    <li><div class="button" data-ref="#papers-others">Others</div></li>
   </ul>
 
   <div class="tab-content">
-    <!-- <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div> -->
-    <div class="tab-pane active" id="papers-trustworthy">
+    <div class="tab-pane active" id="papers-security">
       {% for paper in site.data.publications.papers %}
-      {% if paper.category contains 'Trustworthy' %}
+      {% if paper.category contains 'Security' %}
         <div class="paper">
           <div class="row" style="display: flex;align-items: center;">
+            {% if paper.image %}
             <div class="four columns">
-              <div class="figure" style="display: flex; justify-content: center;">
-                <img src="{{ paper.image }}" width="100%">
+              <div class="figure {{ paper.image_class }}" style="display: flex; justify-content: center;">
+                <img src="{{ paper.image }}" width="100%" alt="{{ paper.title | escape }}" loading="lazy">
               </div>
             </div>
-            <div class="eight columns">
-                          
+            {% endif %}
+            <div class="{% if paper.image %}eight{% else %}twelve{% endif %} columns">
+
               {% if paper.highlight %}
               <p class="title" style="color: #07c63c;"><b>{{ paper.title }}</b></p>
               {% else %}
@@ -154,7 +114,7 @@ title: Home
                   <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
                 {% endif %}
 
-                {% if paper.notes %} 
+                {% if paper.notes %}
                 <strong> <i style="color:deeppink">{{ paper.notes }}</i></strong>
                 {% endif %}
 
@@ -166,173 +126,63 @@ title: Home
       {% endfor %}
     </div>
 
-    <div class="tab-pane" id="papers-mllm">
+    <div class="tab-pane" id="papers-others">
       {% for paper in site.data.publications.papers %}
-      {% if paper.category contains 'MLLM' %}
+      {% if paper.category contains 'Others' %}
         <div class="paper">
           <div class="row" style="display: flex;align-items: center;">
+            {% if paper.image %}
             <div class="four columns">
-              <div class="figure" style="display: flex; justify-content: center;">
-                <img src="{{ paper.image }}" width="100%">
+              <div class="figure {{ paper.image_class }}" style="display: flex; justify-content: center;">
+                <img src="{{ paper.image }}" width="100%" alt="{{ paper.title | escape }}" loading="lazy">
               </div>
             </div>
-            <div class="eight columns">
-                          
-              {% if paper.highlight %}
-              <p class="title" style="color: #07c63c;"><b>{{ paper.title }}</b></p>
-              {% else %}
-              <p class="title"><b>{{ paper.title }}</b></p>
-              {% endif %}
-
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-                {% endif %}
-
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
-
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
-
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
-
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
-
-                {% if paper.data %}
-                  <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-                {% endif %}
-
-                {% if paper.notes %} 
-                <strong> <i style="color:deeppink">{{ paper.notes }}</i></strong>
-                {% endif %}
-
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-forwardlearning">
-      {% for paper in site.data.publications.papers %}
-      {% if paper.category contains 'ForwardLearning' %}
-        <div class="paper">
-          <div class="row" style="display: flex;align-items: center;">
-            <div class="four columns">
-              <div class="figure" style="display: flex; justify-content: center;">
-                <img src="{{ paper.image }}" width="100%">
-              </div>
-            </div>
-            <div class="eight columns">
-                          
-              {% if paper.highlight %}
-              <p class="title" style="color: #07c63c;"><b>{{ paper.title }}</b></p>
-              {% else %}
-              <p class="title"><b>{{ paper.title }}</b></p>
-              {% endif %}
-
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-                {% endif %}
-
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
-
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
-
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
-
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
-
-                {% if paper.data %}
-                  <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-                {% endif %}
-
-                {% if paper.notes %} 
-                <strong> <i style="color:deeppink">{{ paper.notes }}</i></strong>
-                {% endif %}
-
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-      <div class="paper">
-        <div class="row" style="display: flex;align-items: center;">
-          <div class="four columns">
-            <div class="figure" style="display: flex; justify-content: center;">
-              <img src="{{ paper.image }}" width="100%">
-            </div>
-          </div>
-          <div class="eight columns">
-            {% if paper.highlight %}
-            <p class="title" style="color: #07c63c;"><b>{{ paper.title }}</b></p>
-            {% else %}
-            <p class="title"><b>{{ paper.title }}</b></p>
             {% endif %}
+            <div class="{% if paper.image %}eight{% else %}twelve{% endif %} columns">
 
-            <p>{{ paper.authors }}</p>
-            <p><i>{{ paper.venue }}</i></p>
-            <div class="paper-buttons">
-
-              {% if paper.paper_pdf %}
-                <a class="button" href="{{ paper.paper_pdf}}" target="_blank">Paper</a>
+              {% if paper.highlight %}
+              <p class="title" style="color: #07c63c;"><b>{{ paper.title }}</b></p>
+              {% else %}
+              <p class="title"><b>{{ paper.title }}</b></p>
               {% endif %}
 
-              {% if paper.slides %}
-                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-              {% endif %}
+              <p>{{ paper.authors }}</p>
+              <p><i>{{ paper.venue }}</i></p>
+              <div class="paper-buttons">
 
-              {% if paper.poster %}
-                <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-              {% endif %}
+                {% if paper.paper_pdf %}
+                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+                {% endif %}
 
-              {% if paper.video %}
-                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-              {% endif %}
+                {% if paper.slides %}
+                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+                {% endif %}
 
-              {% if paper.code %}
-                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-              {% endif %}
+                {% if paper.poster %}
+                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                {% endif %}
 
-              {% if paper.data %}
-                <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-              {% endif %}
+                {% if paper.video %}
+                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                {% endif %}
 
-              {% if paper.notes %} 
-              <strong> <i style="color:deeppink">{{ paper.notes }}</i></strong>
-              {% endif %}
+                {% if paper.code %}
+                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                {% endif %}
+
+                {% if paper.data %}
+                  <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+                {% endif %}
+
+                {% if paper.notes %}
+                <strong> <i style="color:deeppink">{{ paper.notes }}</i></strong>
+                {% endif %}
+
+              </div>
             </div>
           </div>
-          </div>
         </div>
+      {% endif %}
       {% endfor %}
     </div>
 
