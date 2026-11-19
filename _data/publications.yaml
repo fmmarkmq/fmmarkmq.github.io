@@ -1,5 +1,47 @@
 papers:
 
+  - title: "SEMA-Auto: Sighted and Efficient Multi-Turn Attack with Autonomy"
+    authors: <strong><b>Mingqian Feng</b></strong>, Xiaodong Liu, Weiwei Yang, Chenliang Xu, Jialin Song, Qiyao Ma, Chengquan Guo, Carolyn Buractaon, Mark Russinovich, Christopher White, Jianfeng Gao
+    venue: Preprint arXiv 2026.
+    paper_pdf: "https://arxiv.org/pdf/2610.35743"
+    code: "https://github.com/microsoft/SEMA"
+    # Figure 4: https://arxiv.org/html/2610.35743v2/detailed_method_framework.png
+    image: ./assets/publication_images/sema-auto.png
+    category: [Security]
+
+  - title: "Where You Inject Matters: The Trust Region Effect in LLM Agents"
+    authors: Chengquan Guo, Xiaodong Liu, Weiwei Yang, <strong><b>Mingqian Feng</b></strong>, Jialin Song, Qiyao Ma, Carolyn Buractaon, Christopher White, Bo Li, Jianfeng Gao
+    venue: Preprint arXiv 2026.
+    paper_pdf: "https://arxiv.org/pdf/2610.38867"
+    # Figure 1: https://arxiv.org/html/2610.38867v1/motivation_example_pink.png
+    image: ./assets/publication_images/trust-region.png
+    category: [Security]
+
+  - title: "CoFiBreak: A Coarse-to-Fine Diversity Reward for Effective Multi-Turn Jailbreak"
+    authors: Jialin Song, Xiaodong Liu, Weiwei Yang, <strong><b>Mingqian Feng</b></strong>, Chengquan Guo, Qiyao Ma, Carolyn Buractaon, Anson Ho, Wuyang Chen, Christopher White
+    venue: Preprint arXiv 2026.
+    paper_pdf: "https://arxiv.org/pdf/2610.40926"
+    # Figure 2: https://arxiv.org/html/2610.40926v1/method_overview.svg
+    image: ./assets/publication_images/cofibreak.svg
+    category: [Security]
+
+  - title: "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender"
+    authors: Qiyao Ma, Xiaodong Liu, Weiwei Yang, <strong><b>Mingqian Feng</b></strong>, Chengquan Guo, Jialin Song, Carolyn Buractaon, Zhe Zhao, Junshan Zhang, Sandeep Atluri, Christopher White, Jianfeng Gao
+    venue: Preprint arXiv 2026.
+    paper_pdf: "https://arxiv.org/pdf/2610.40627"
+    # Figure 1: https://arxiv.org/html/2610.40627v1/framework.png
+    image: ./assets/publication_images/shallowdefend.png
+    category: [Security]
+
+  - title: "BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender"
+    authors: Yolo Y. Tang, Daiki Shimada, Jiayue Meng, Jing Bi, Pinxin Liu, Yicheng Wang, Yunzhong Xiao, Zhangyun Tan, Zeliang Zhang, Chao Huang, Susan Liang, Qianxiang Shen, Luchuan Song, Ali Vosoughi, <strong><b>Mingqian Feng</b></strong>, Melika Filvantorkaman, Chenliang Xu
+    venue: Preprint arXiv 2026.
+    paper_pdf: "https://arxiv.org/pdf/2609.15478"
+    code: "https://github.com/yoloytang/BVB"
+    # Figure 1: https://arxiv.org/html/2609.15478v3/teaser_frontier_combined.png
+    image: ./assets/publication_images/bvb.png
+    category: [Others]
+
   - title: "Statistical Estimation of Adversarial Risk in Large Language Models under Best-of-N Sampling"
     authors: <strong><b>Mingqian Feng</b></strong>, Xiaodong Liu, Weiwei Yang, Chenliang Xu, Christopher White, Jianfeng Gao
     venue: NeurIPS 2026.
